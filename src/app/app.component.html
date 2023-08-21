@@ -1,14 +1,16 @@
 
 
-  <a class="menu-link">
-    <span></span>
-  </a>
 
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark justify-content-center bg-dark   ">
+    <a class="navbar-brand" href="#">LawetaExpress</a>
+
+  </nav>
+</header>
   <div class="navbar-bg">
 
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark justify-content-center  fixed-top">
-          <a class="navbar-brand" href="#">LawetaExpress</a>
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,7 +38,7 @@
 
           </div>
 
-        </nav>
+
         <!-- /.row -->
 
       <!-- /.container -->
@@ -58,10 +60,10 @@
 
 
         </div>
-        <div class="header-btns">
+        <div class="header-btns ">
 
-<button class="header-btn btn btn-primary d-block">POPROS O WYCENE</button>
-<button class="header-btn btn btn-primary d-block">KONTAKT Z LAWETA</button>
+<button class="laweta-btn btn d-block">POPROS O WYCENE</button>
+<a class="laweta-btn btn d-block" href="#contact">KONTAKT Z LAWETA</a>
 
         </div>
         <!-- /.row -->
@@ -70,84 +72,172 @@
     </div>
     <!-- /.main -->
   </div>
-  <section id="advantages">
-  <div class="row">
-        <div class="container col-6 text-center">
-        <div class="advantages-title"><strong>Dlachego <span class="text-blue">Warto</span> skorzystac z naszych uslug?</strong></div>
-        <ul class="advantages-list  ">
-          <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa </p>
-          <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa</p>
-          <p>xui</p>
-          <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa</p>
-          <p>xui</p>
-        </ul>
+  <section class="advantages" id="advantages">
+
+        <div class="container col-6 text-center advantages-content">
+
+        <h2 class="advantages-title"><strong>Dlachego <span class="text-blue">Warto</span> skorzystac z naszych uslug?</strong></h2>
+        <div class="advantages-list  ">
+          <p>Najniższe ceny i możliwość niegocjacji </p>
+          <p>Całodobowa dostępność, pracujemy 24/7 </p>
+          <p>Zapewniamy profesjonalną obsługę klienta</p>
+          <p>Satysfakcja klienta, zadowolenie naszych klientów jest dla nas najważniejsze!</p>
+          <p>Promocje i rabaty</p>
+          <p>          Różnorodność usług
+          </p>
+        </div>
+        <i class="flag flag-united-states"></i>
+
       </div>
 
 
 
-      <div class="advantages-bg bg-red col-6"></div>
+
+      <div class="advantages-bg col-6"></div>
+
+
+  </section>
+  <section class="d-flex" id="offer">
+
+      <div class="offer-bg bg-red col-6"></div>
+      <div class="container col-6 text-center">
+        <h2 class="offer-title"><strong>Nasza   <span class="text-blue">Oferta</span> </strong></h2>
+        <ul *ngIf="show==false" class="contact-list">
+        <p>Holowanie  (auto osobowe, bus, motocykl) <br> <span class="text-blue">OD 140 ZŁ</span></p>
+        <p>Dowóz paliwa( teren Trójmiasta) <br> <span class="text-blue">140 ZŁ</span></p>
+
+        <p>Awaryjne Odpalenie <br> <span class="text-blue">150 ZŁ</span></p>
+
+        <p>Wymiana koła<br> <span class="text-blue">150 ZŁ</span></p>
+
+        <p>Transport z Miasta do Miasta<br> <span class="text-blue">ZAŁADUNEK 99 ZŁ + 2.80ZŁ/KM</span></p>
+
+        <p>Transport Premium aut
+          <br> <span class="text-blue">Mail albo Telefon</span></p>
+      </ul>
+      <ul *ngIf="show==true" class="contact-list">
+        <p>ZZZZZZZZELUPA <br> <span class="text-blue">OD 140 ZŁ</span></p>
+        <p>Dowóz paliwa( teren Trójmiasta) <br> <span class="text-blue">140 ZŁ</span></p>
+
+        <p>Awaryjne Odpalenie <br> <span class="text-blue">150 ZŁ</span></p>
+
+        <p>XUI<br> <span class="text-blue">150 ZŁ</span></p>
+
+        <p>Transport z Miasta do Miasta<br> <span class="text-blue">ZAŁADUNEK 99 ZŁ + 2.80ZŁ/KM</span></p>
+
+        <p>Transport Premium aut
+          <br> <span class="text-blue">Mail albo Telefon</span></p>
+      </ul>
+      <div class="offer-btn d-flex justify-content-end">
+        <button (click)="show=!show" class="laweta-btn btn d-block  ">Oferta w EU</button>
+
+      </div>
+
+    </div>
+
+
+
+
+
+  </section>
+  <section class="d-flex" id="contact">
+
+      <div class="container col-6 text-center">
+        <h2 class="contact-title"><strong>Nasz   <span class="text-blue">Kontakt </span> </strong></h2>
+        <form action="" class="contact-form">
+          <div class="form-group">
+            <label class="sr-only" for="inlineFormInputName">Name</label>
+            <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
+          </div>
+
+
+     <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+        </form>
+
+    </div>
+
+
+
+    <div class="contact-bg bg-red col-6"></div>
+
+  </section>
+
+<section class="d-flex" id="offer">
+
+      <div class="offer-bg bg-red col-6"></div>
+      <div class="container col-6 text-center">
+        <h2 class="offer-title"><strong>Nasza   <span class="text-blue">Oferta</span> </strong></h2>
+        <ul *ngIf="show==false" class="contact-list">
+        <p>Holowanie  (auto osobowe, bus, motocykl) <br> <span class="text-blue">OD 140 ZŁ</span></p>
+        <p>Dowóz paliwa( teren Trójmiasta) <br> <span class="text-blue">140 ZŁ</span></p>
+
+        <p>Awaryjne Odpalenie <br> <span class="text-blue">150 ZŁ</span></p>
+
+        <p>Wymiana koła<br> <span class="text-blue">150 ZŁ</span></p>
+
+        <p>Transport z Miasta do Miasta<br> <span class="text-blue">ZAŁADUNEK 99 ZŁ + 2.80ZŁ/KM</span></p>
+
+        <p>Transport Premium aut
+          <br> <span class="text-blue">Mail albo Telefon</span></p>
+      </ul>
+
+    
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+<footer class="py-3 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+
+      <div class=" footer-menu ">
+
+        <ul class="navbar-nav ml-auto ">
+      <li class="nav-item active d-inline">
+        <a class="nav-link" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#advantages">Advantages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#offer">Offer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#opinion">Opinion</a>
+      </li>
+    </ul></div></div>
   </div>
 
-  </section>
-  <section id="contact">
-    <div class="row">
-      <div class="contact-bg bg-red col-6"></div>
-      <div class="container col-6 text-center">
-      <div class="contact-title"><strong>Dlachego Warto skorzystac z naszych uslug?</strong></div>
-      <ul class="contact-list">
-        <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa </p>
-        <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa</p>
-        <p>xui</p>
-        <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa</p>
-        <p>xui</p>
-      </ul>
-    </div>
 
 
 
 
-</div>
-  </section>
-  <section id="offer">
-    <div class="row">
-      <div class="container col-6 text-center">
-      <div class="offer-title"><strong>Dlachego <span class="text-blue">Warto</span> skorzystac z naszych uslug?</strong></div>
-      <ul class="offer-list  ">
-        <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa </p>
-        <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa</p>
-        <p>xui</p>
-        <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa</p>
-        <p>xui</p>
-      </ul>
-    </div>
+  <div>
+    <p class="text-center text-white ">© 2023 LawetaExpress, Inc</p>
 
-
-
-    <div class="offer-bg bg-red col-6"></div>
-</div>
-  </section>
-
-  <section id="about">
-    <div class="row">
-      <div class="contact-bg bg-red col-6"></div>
-      <div class="container col-6 text-center">
-      <div class="contact-title"><strong>Dlachego Warto skorzystac z naszych uslug?</strong></div>
-      <ul class="contact-list">
-        <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa </p>
-        <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa</p>
-        <p>xui</p>
-        <p>zalupa zalupa zalupa zalupa zalupa zalupa zalupazalupa</p>
-        <p>xui</p>
-      </ul>
-    </div>
-
-
-
-
-</div>
-  </section>
-  <section id="opinion"></section>
-
+  </div>
+</footer>
 
 
 

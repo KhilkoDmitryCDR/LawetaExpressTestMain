@@ -1,4 +1,16 @@
 
+$laweta-blue:#2B71A4;
+
+html{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style-type: style none;
+}
 
 .navbar-bg{
 background-image: url('../assets/img/1.png');
@@ -11,25 +23,66 @@ color: white;
   margin-top: 4rem;
 
 }
-.header-btn{
+.laweta-btn{
+  height:40px;
+  width: 200px;
   margin-bottom: 1rem;
+  border-radius: 50px;
+  color: white;
+  background: black;
+  &:hover{
+    cursor: pointer;
+    background: #424242;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+
 }
+
 .text-blue{
-  color: blue;
+  color: $laweta-blue;
 }
+.advantages{
+  display: flex;
+}
+.advantages-content{
+padding: 0 0 2rem 2rem;
+}
+.advantages-bg{
+
+  background-image: url('../assets/img/2.png');
+
+
+background-repeat: no-repeat;
+background-size:cover;
+width: 50%;
+
+}
+
 .advantages-title{
   margin-top: 2rem;
 }
-.contact-bg{
+.advantages-list{
+p{
+  font-size: 1.1rem;
+}
+}
+.offer-bg{
 
   background-image: url('../assets/img/3.png');
 background-repeat: no-repeat;
 background-size: cover;
+width: 50%;
 }
+.contact-bg{
 
-.advantages-bg{
-
-  background-image: url('../assets/img/2.png');
+  background-image: url('../assets/img/4.png');
 background-repeat: no-repeat;
 background-size: cover;
+width: 50%;
 }
+.contact-form{
+  margin: 2rem;
+
+}
+
+
